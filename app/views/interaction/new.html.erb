@@ -1,0 +1,31 @@
+<div class="container">
+
+  <br />
+
+  <h5>Rails ICD Playground by David La Barbera</h5>
+
+  <%= form_tag interaction_show_path do %>
+
+    <div class="form-group">
+
+      <!-- Passo il token di auth alla query -->
+      <%= label_tag 'ricerca', 'Ricerca per nome', placeholder: 'Es: tubercolosis' %>
+      <%= text_field_tag 'ricerca', '', class: 'form-control' %>
+
+      <small id="hint" class="form-text text-muted">Es: tuberculosis</small>
+      <br />
+
+      <% if flash[:notice] != nil %>
+        <div class="alert alert-danger" role="alert">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+
+      <%= submit_tag 'Ricerca', class:'btn btn-primary' %>
+
+    </div>
+
+  <% end %>
+
+</div>
+

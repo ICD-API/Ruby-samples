@@ -1,0 +1,23 @@
+
+
+<div class="container">
+
+  <br /><h5>Risultato interrogazione</h5><br />
+
+  <div class="row">
+
+    <div class="col-lg-2">
+      <%= link_to 'Effettua un altra ricerca', root_path, class:'btn btn-outline-primary' %>
+    </div>
+    <div class="col-lg-10">
+      <pre>
+        <code>
+            <%= JSON.pretty_generate @response %>
+        </code>
+      </pre>
+    </div>
+
+  </div>
+
+</div>
+
