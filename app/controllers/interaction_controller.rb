@@ -36,7 +36,8 @@ class InteractionController < ApplicationController
 
       response = RestClient.get uri, {'Authorization': "Bearer #{session[:token]}",
                                       'Accept': :json,
-                                      'Accept-Language': 'en'
+                                      'Accept-Language': 'en',
+                                      'API-Version': 'v2'
       }
       @response = JSON.parse(response)
     end
