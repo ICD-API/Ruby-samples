@@ -20,8 +20,8 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 
 # fix
-gem 'nokogiri', '~> 1.10.4'
-gem 'puma', '~> 3.12.2'
+gem "nokogiri", ">= 1.10.4"
+gem 'puma', '>= 3.12.2'
 gem "rack", ">= 2.0.8"
 
 # Use CoffeeScript for .coffee assets and views
